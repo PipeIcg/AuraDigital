@@ -1,5 +1,5 @@
 // =====================================================
-// AURA DIGITAL - JAVASCRIPT INTERACTIVO
+// CASVA DIGITAL - JAVASCRIPT INTERACTIVO
 // Partículas, animaciones, flip cards, scroll effects
 // =====================================================
 
@@ -406,5 +406,5 @@ function showFormMessage(message, type) {
     formMessage.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
 }
 
-console.log('🚀 Aura Digital - Landing Page cargada correctamente');
+console.log('🚀 Casva Digital - Landing Page cargada correctamente');
 console.log('💜 Desarrollado con amor y código limpio');

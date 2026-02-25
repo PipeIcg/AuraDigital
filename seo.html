@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Servicios de SEO profesional para empresas en Chile. Posiciona tu empresa en Google, aumenta tu tráfico orgánico y genera clientes reales con una estrategia SEO técnica y sostenible.">
+    <meta name="keywords"
+        content="SEO empresas, posicionamiento Google, SEO técnico, SEO Chile, agencia SEO, Casva Digital">
+    <title>Servicios SEO para Empresas | Casva Digital</title>
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://casvadigital.com/seo.html">
+
+    <!-- Preconnect para optimización de fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="seo.css">
+</head>
+
+<body>
+    <!-- Partículas de fondo -->
+    <div class="particles-container" id="particles"></div>
+
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <div class="logo-container">
+                    <img src="images/logo.png" alt="Casva Digital" class="logo"
+                        onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div class="logo-fallback">
+                        <a href="index.html" style="text-decoration:none;">
+                            <span class="logo-text">Casva<span class="logo-accent">Digital</span></span>
+                        </a>
+                    </div>
+                </div>
+                <div class="nav-links">
+                    <a href="index.html#servicios" class="nav-link">Servicios</a>
+                    <a href="seo.html" class="nav-link nav-link--active">SEO</a>
+                    <a href="index.html#sobre-mi" class="nav-link">Sobre Mí</a>
+                    <a href="#contacto-seo" class="btn-primary btn-small">Contactar</a>
+                </div>
+                <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="index.html#servicios" class="mobile-nav-link">Servicios</a>
+        <a href="seo.html" class="mobile-nav-link">SEO</a>
+        <a href="index.html#sobre-mi" class="mobile-nav-link">Sobre Mí</a>
+        <a href="#contacto-seo" class="mobile-nav-link">Contacto</a>
+    </div>
+
+    <!-- ===== HERO SECTION ===== -->
+    <section class="hero seo-hero" id="hero">
+        <div class="container">
+            <div class="hero-content seo-hero-content">
+                <div class="hero-text">
+                    <div class="hero-label">
+                        <span class="label-icon">🎯</span>
+                        <span>SEO Estratégico para Empresas</span>
+                    </div>
+                    <h1 class="hero-title">
+                        Posiciona tu empresa en
+                        <span class="gradient-text">Google</span> y atrae
+                        <span class="gradient-text">clientes reales</span>
+                    </h1>
+                    <p class="hero-subtitle">
+                        El SEO no es magia, es estrategia. Implementamos un proceso técnico y estratégico
+                        para aumentar tu visibilidad y generar crecimiento sostenible.
+                    </p>
+                    <div class="hero-cta">
+                        <a href="#contacto-seo" class="btn-primary btn-large btn-glow">
+                            Solicitar Diagnóstico SEO
+                            <span class="btn-arrow">→</span>
+                        </a>
+                        <a href="#metodologia" class="btn-secondary btn-large">
+                            Ver Metodología
+                        </a>
+                    </div>
+                    <div class="seo-hero-badges">
+                        <div class="seo-badge">
+                            <span class="seo-badge-icon">📈</span>
+                            <span>Tráfico Orgánico</span>
+                        </div>
+                        <div class="seo-badge">
+                            <span class="seo-badge-icon">🔍</span>
+                            <span>SEO Técnico</span>
+                        </div>
+                        <div class="seo-badge">
+                            <span class="seo-badge-icon">📊</span>
+                            <span>Métricas Reales</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="seo-visual-container">
+                        <!-- Mockup de ranking Google -->
+                        <div class="google-mockup glass-card">
+                            <div class="google-mockup-bar">
+                                <div class="mockup-dot"></div>
+                                <div class="mockup-dot"></div>
+                                <div class="mockup-dot"></div>
+                                <div class="mockup-search-bar">
+                                    <span class="mockup-search-icon">🔍</span>
+                                    <span class="mockup-search-text">tu empresa + ciudad</span>
+                                </div>
+                            </div>
+                            <div class="google-results">
+                                <div class="google-result google-result--top">
+                                    <div class="result-ranking result-ranking--1">1°</div>
+                                    <div class="result-content">
+                                        <div class="result-title">Tu Empresa · tuempresa.com</div>
+                                        <div class="result-desc">Líderes en el sector con más de X años de
+                                            experiencia...</div>
+                                    </div>
+                                    <div class="result-pulse"></div>
+                                </div>
+                                <div class="google-result">
+                                    <div class="result-ranking result-ranking--2">2°</div>
+                                    <div class="result-content">
+                                        <div class="result-title">Competidor A · comp-a.com</div>
+                                        <div class="result-desc">Descripción del competidor aquí...</div>
+                                    </div>
+                                </div>
+                                <div class="google-result">
+                                    <div class="result-ranking result-ranking--3">3°</div>
+                                    <div class="result-content">
+                                        <div class="result-title">Competidor B · comp-b.com</div>
+                                        <div class="result-desc">Descripción del competidor aquí...</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mockup-chart">
+                                <div class="chart-label">Tráfico orgánico</div>
+                                <div class="chart-bars">
+                                    <div class="chart-bar" style="height: 20%"></div>
+                                    <div class="chart-bar" style="height: 35%"></div>
+                                    <div class="chart-bar" style="height: 30%"></div>
+                                    <div class="chart-bar" style="height: 50%"></div>
+                                    <div class="chart-bar" style="height: 45%"></div>
+                                    <div class="chart-bar" style="height: 65%"></div>
+                                    <div class="chart-bar" style="height: 60%"></div>
+                                    <div class="chart-bar" style="height: 80%"></div>
+                                    <div class="chart-bar chart-bar--active" style="height: 95%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Floating badge -->
+                        <div class="seo-floating-badge">
+                            <span class="floating-badge-icon">🚀</span>
+                            <div>
+                                <div class="floating-badge-num">+340%</div>
+                                <div class="floating-badge-label">tráfico orgánico</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== PROBLEMA SECTION ===== -->
+    <section class="seo-problema" id="problema">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">⚠️ El Problema Real</span>
+                <h2 class="section-title">Tu web existe, pero nadie la encuentra</h2>
+                <p class="section-subtitle">
+                    Tener un sitio web no es suficiente. Sin visibilidad en Google, tu empresa es invisible para quienes
+                    más te necesitan.
+                </p>
+            </div>
+            <div class="problema-grid">
+                <div class="problema-card glass-card">
+                    <div class="problema-icon">👁️‍🗨️</div>
+                    <h3 class="problema-title">Baja Visibilidad</h3>
+                    <p class="problema-desc">
+                        El 75% de los usuarios nunca pasa de la primera página de Google. Si no estás ahí, simplemente
+                        no existes para tus clientes potenciales.
+                    </p>
+                </div>
+                <div class="problema-card glass-card">
+                    <div class="problema-icon">💸</div>
+                    <h3 class="problema-title">Dependencia de Publicidad Pagada</h3>
+                    <p class="problema-desc">
+                        Invertir solo en anuncios es costoso y no sostenible. Cuando dejas de pagar, el tráfico
+                        desaparece. El SEO genera resultados que perduran.
+                    </p>
+                </div>
+                <div class="problema-card glass-card">
+                    <div class="problema-icon">📉</div>
+                    <h3 class="problema-title">Oportunidades Perdidas</h3>
+                    <p class="problema-desc">
+                        Cada día que no apareces en los primeros resultados, tu competencia captura esos clientes. El
+                        tiempo es un factor crítico en el posicionamiento.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SOLUCIÓN SECTION ===== -->
+    <section class="seo-solucion" id="solucion">
+        <div class="container">
+            <div class="solucion-content">
+                <div class="solucion-text">
+                    <span class="section-label">✅ Nuestra Solución</span>
+                    <h2 class="section-title">SEO técnico + estrategia de crecimiento real</h2>
+                    <p class="solucion-desc">
+                        No hacemos SEO genérico. Combinamos una base técnica sólida con una estrategia de contenido y
+                        crecimiento diseñada específicamente para tu industria y mercado objetivo.
+                    </p>
+                    <p class="solucion-desc">
+                        Nuestro diferencial es el análisis profundo de métricas reales: no prometemos resultados vacíos,
+                        sino decisiones basadas en datos que generan un crecimiento progresivo y sostenible.
+                    </p>
+                    <div class="solucion-ventajas">
+                        <div class="ventaja-item">
+                            <div class="ventaja-check">✓</div>
+                            <span>Auditoría técnica completa desde el primer día</span>
+                        </div>
+                        <div class="ventaja-item">
+                            <div class="ventaja-check">✓</div>
+                            <span>Estrategia personalizada según tu sector y competencia</span>
+                        </div>
+                        <div class="ventaja-item">
+                            <div class="ventaja-check">✓</div>
+                            <span>Métricas reales: impresiones, CTR, posición promedio</span>
+                        </div>
+                        <div class="ventaja-item">
+                            <div class="ventaja-check">✓</div>
+                            <span>Reportes mensuales claros y accionables</span>
+                        </div>
+                        <div class="ventaja-item">
+                            <div class="ventaja-check">✓</div>
+                            <span>Optimización continua basada en resultados</span>
+                        </div>
+                    </div>
+                    <a href="#contacto-seo" class="btn-primary btn-large"
+                        style="margin-top: 32px; display: inline-flex;">
+                        Solicitar Diagnóstico Gratuito
+                        <span class="btn-arrow">→</span>
+                    </a>
+                </div>
+                <div class="solucion-visual">
+                    <div class="solucion-stats-grid">
+                        <div class="solucion-stat glass-card">
+                            <div class="solucion-stat-icon">🔍</div>
+                            <div class="solucion-stat-num gradient-text">SEO Técnico</div>
+                            <div class="solucion-stat-label">Base estructural sólida</div>
+                        </div>
+                        <div class="solucion-stat glass-card">
+                            <div class="solucion-stat-icon">📊</div>
+                            <div class="solucion-stat-num gradient-text">Datos Reales</div>
+                            <div class="solucion-stat-label">Análisis y métricas precisas</div>
+                        </div>
+                        <div class="solucion-stat glass-card">
+                            <div class="solucion-stat-icon">🚀</div>
+                            <div class="solucion-stat-num gradient-text">Crecimiento</div>
+                            <div class="solucion-stat-label">Progresivo y sostenible</div>
+                        </div>
+                        <div class="solucion-stat glass-card">
+                            <div class="solucion-stat-icon">🏆</div>
+                            <div class="solucion-stat-num gradient-text">Autoridad</div>
+                            <div class="solucion-stat-label">Posicionamiento de liderazgo</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== METODOLOGÍA EN 3 FASES ===== -->
+    <section class="seo-metodologia" id="metodologia">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">⚙️ Nuestra Metodología</span>
+                <h2 class="section-title">Un proceso en 3 fases estratégicas</h2>
+                <p class="section-subtitle">
+                    Un camino estructurado desde los cimientos hasta el liderazgo digital
+                </p>
+            </div>
+            <div class="fases-container">
+                <!-- Línea de conexión -->
+                <div class="fases-line"></div>
+
+                <!-- Fase 1 -->
+                <div class="fase-item">
+                    <div class="fase-number">01</div>
+                    <div class="fase-card glass-card">
+                        <div class="fase-icon">🔧</div>
+                        <div class="fase-badge">Meses 1–3</div>
+                        <h3 class="fase-title">Base Técnica</h3>
+                        <p class="fase-desc">
+                            El SEO empieza desde adentro. Auditamos y corregimos todo lo que Google necesita ver para
+                            indexar y valorar tu sitio correctamente.
+                        </p>
+                        <ul class="fase-lista">
+                            <li>Auditoría técnica completa</li>
+                            <li>Optimización de indexación y crawling</li>
+                            <li>Configuración de sitemap y robots.txt</li>
+                            <li>Estructura de URLs y arquitectura web</li>
+                            <li>Velocidad y Core Web Vitals</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Fase 2 -->
+                <div class="fase-item">
+                    <div class="fase-number">02</div>
+                    <div class="fase-card glass-card fase-card--featured">
+                        <div class="fase-icon">📈</div>
+                        <div class="fase-badge">Meses 4–6</div>
+                        <h3 class="fase-title">Crecimiento Estratégico</h3>
+                        <p class="fase-desc">
+                            Con la base técnica sólida, focalizamos esfuerzos en el contenido y las palabras clave que
+                            atraen a tus clientes ideales.
+                        </p>
+                        <ul class="fase-lista">
+                            <li>Investigación de palabras clave por intención</li>
+                            <li>Optimización de páginas clave del sitio</li>
+                            <li>Mejora del CTR en resultados de búsqueda</li>
+                            <li>Estrategia de contenido orientada a conversión</li>
+                            <li>SEO local y sectorial</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Fase 3 -->
+                <div class="fase-item">
+                    <div class="fase-number">03</div>
+                    <div class="fase-card glass-card">
+                        <div class="fase-icon">🏆</div>
+                        <div class="fase-badge">Meses 7–12</div>
+                        <h3 class="fase-title">Autoridad Digital</h3>
+                        <p class="fase-desc">
+                            Consolidamos posiciones, expandimos el alcance y trabajamos para que tu empresa sea la
+                            referencia en tu industria.
+                        </p>
+                        <ul class="fase-lista">
+                            <li>Seguimiento y análisis de posiciones</li>
+                            <li>Optimización continua basada en datos</li>
+                            <li>Expansión de palabras clave posicionadas</li>
+                            <li>Estrategia de autoridad de dominio</li>
+                            <li>Reportes y ajuste de estrategia mensual</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== PLANES DE SERVICIO ===== -->
+    <section class="seo-planes" id="planes">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">📦 Planes de Servicio</span>
+                <h2 class="section-title">Elige el plan que se adapta a tu empresa</h2>
+                <p class="section-subtitle">
+                    Cada plan está diseñado para un objetivo específico. Sin precios ocultos, sin compromisos vacíos.
+                </p>
+            </div>
+            <div class="planes-grid">
+
+                <!-- Plan 3 meses -->
+                <div class="plan-card glass-card">
+                    <div class="plan-header">
+                        <div class="plan-icon">🌱</div>
+                        <div class="plan-duration">3 meses</div>
+                        <h3 class="plan-name">Impulso SEO</h3>
+                        <p class="plan-tagline">Optimización base y primeros resultados</p>
+                    </div>
+                    <ul class="plan-features">
+                        <li class="plan-feature">
+                            <span class="plan-feature-check">✓</span>
+                            Auditoría técnica completa
+                        </li>
+                        <li class="plan-feature">
+                            <span class="plan-feature-check">✓</span>
+                            Correcciones de indexación
+                        </li>
+                        <li class="plan-feature">
+                            <span class="plan-feature-check">✓</span>
+                            Optimización de velocidad
+                        </li>
+                        <li class="plan-feature">
+                            <span class="plan-feature-check">✓</span>
+                            Investigación inicial de keywords
+                        </li>
+                        <li class="plan-feature">
+                            <span class="plan-feature-check">✓</span>
+                            Reporte mensual de avances
+                        </li>
+                    </ul>
+                    <div class="plan-cta">
+                        <a href="#contacto-seo" class="btn-secondary btn-large"
+                            style="width:100%; justify-content:center;">
+                            Consultar Plan
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Plan 6 meses - DESTACADO -->
+                <div class="plan-card plan-card--featured glass-card">
+                    <div class="plan-recommended-badge">⭐ Más Recomendado</div>
+                    <div class="plan-header">
+                        <div class="plan-icon">🚀</div>
+                        <div class="plan-duration">6 meses</div>
+                        <h3 class="plan-name">Crecimiento SEO</h3>
+                        <p class="plan-tagline">Estrategia completa y crecimiento progresivo</p>
+                    </div>
+                    <ul class="plan-features">
+                        <li class="plan-feature">
+                            <span class="plan-feature-check">✓</span>
+                            Todo del Plan Impulso
+                        </li>
+                        <li class="plan-feature">
+                            <span class="plan-feature-check">✓</span>
+                            Estrategia de contenido SEO
+                        </li>
+                        <li class="plan-feature">
+                            <span class="plan-feature-check">✓</span>
+                            Optimización de páginas clave
+                        </li>
+                        <li class="plan-feature">
+                            <span class="plan-feature-check">✓</span>
+                            Mejora de CTR y snippets
+                        </li>
+                        <li class="plan-feature">
+                            <span class="plan-feature-check">✓</span>
+                            Keywords de intención de compra
+                        </li>
+                        <li class="plan-feature">
+                            <span class="plan-feature-check">✓</span>
+                            Reporte mensual detallado
+                        </li>
+                    </ul>
+                    <div class="plan-cta">
+                        <a href="#contacto-seo" class="btn-primary btn-large btn-glow"
+                            style="width:100%; justify-content:center;">
+                            Consultar Plan
+                            <span class="btn-arrow">→</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Plan 12 meses -->
+                <div class="plan-card glass-card">
+                    <div class="plan-header">
+                        <div class="plan-icon">🏆</div>
+                        <div class="plan-duration">12 meses</div>
+                        <h3 class="plan-name">Autoridad Digital</h3>
+                        <p class="plan-tagline">Consolidación y liderazgo en tu sector</p>
+                    </div>
+                    <ul class="plan-features">
+                        <li class="plan-feature">
+                            <span class="plan-feature-check">✓</span>
+                            Todo del Plan Crecimiento
+                        </li>
+                        <li class="plan-feature">
+                            <span class="plan-feature-check">✓</span>
+                            Expansión agresiva de keywords
+                        </li>
+                        <li class="plan-feature">
+                            <span class="plan-feature-check">✓</span>
+                            Estrategia de autoridad de dominio
+                        </li>
+                        <li class="plan-feature">
+                            <span class="plan-feature-check">✓</span>
+                            SEO local y sectorial avanzado
+                        </li>
+                        <li class="plan-feature">
+                            <span class="plan-feature-check">✓</span>
+                            Auditorías trimestrales
+                        </li>
+                        <li class="plan-feature">
+                            <span class="plan-feature-check">✓</span>
+                            Reuniones de estrategia mensuales
+                        </li>
+                    </ul>
+                    <div class="plan-cta">
+                        <a href="#contacto-seo" class="btn-secondary btn-large"
+                            style="width:100%; justify-content:center;">
+                            Consultar Plan
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== MÉTRICAS QUE MONITOREAMOS ===== -->
+    <section class="seo-metricas" id="metricas">
+        <div class="container">
+            <div class="metricas-content">
+                <div class="metricas-text">
+                    <span class="section-label">📊 Métricas que Monitoreamos</span>
+                    <h2 class="section-title">Datos reales, decisiones inteligentes</h2>
+                    <p class="solucion-desc">
+                        No trabajamos con suposiciones. Cada decisión en tu estrategia SEO está respaldada por datos
+                        concretos. Monitoreamos las métricas que realmente importan para tu crecimiento.
+                    </p>
+                    <div class="metricas-lista">
+                        <div class="metrica-item">
+                            <div class="metrica-icon">👁️</div>
+                            <div class="metrica-info">
+                                <h4 class="metrica-name">Impresiones</h4>
+                                <p class="metrica-desc">Cuántas veces aparece tu sitio en resultados de búsqueda</p>
+                            </div>
+                        </div>
+                        <div class="metrica-item">
+                            <div class="metrica-icon">📈</div>
+                            <div class="metrica-info">
+                                <h4 class="metrica-name">Tráfico Orgánico</h4>
+                                <p class="metrica-desc">Visitantes que llegan desde Google sin publicidad pagada</p>
+                            </div>
+                        </div>
+                        <div class="metrica-item">
+                            <div class="metrica-icon">📍</div>
+                            <div class="metrica-info">
+                                <h4 class="metrica-name">Posición Promedio</h4>
+                                <p class="metrica-desc">Ranking general de tu sitio en los resultados de búsqueda</p>
+                            </div>
+                        </div>
+                        <div class="metrica-item">
+                            <div class="metrica-icon">🖱️</div>
+                            <div class="metrica-info">
+                                <h4 class="metrica-name">CTR (Click Through Rate)</h4>
+                                <p class="metrica-desc">Porcentaje de usuarios que hacen clic en tu resultado</p>
+                            </div>
+                        </div>
+                        <div class="metrica-item">
+                            <div class="metrica-icon">🔑</div>
+                            <div class="metrica-info">
+                                <h4 class="metrica-name">Palabras Clave Posicionadas</h4>
+                                <p class="metrica-desc">Cantidad y calidad de keywords en las que rankeas</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="metricas-visual">
+                    <div class="metricas-dashboard glass-card">
+                        <div class="dashboard-header">
+                            <span class="dashboard-title">Google Search Console</span>
+                            <span class="dashboard-period">Últimos 6 meses</span>
+                        </div>
+                        <div class="dashboard-stats">
+                            <div class="dashboard-stat">
+                                <div class="dashboard-stat-val gradient-text">48.2K</div>
+                                <div class="dashboard-stat-label">Impresiones</div>
+                                <div class="dashboard-stat-trend">↑ +124%</div>
+                            </div>
+                            <div class="dashboard-stat">
+                                <div class="dashboard-stat-val gradient-text">3.4K</div>
+                                <div class="dashboard-stat-label">Clics</div>
+                                <div class="dashboard-stat-trend">↑ +89%</div>
+                            </div>
+                            <div class="dashboard-stat">
+                                <div class="dashboard-stat-val gradient-text">7.1%</div>
+                                <div class="dashboard-stat-label">CTR</div>
+                                <div class="dashboard-stat-trend">↑ +3.2pp</div>
+                            </div>
+                            <div class="dashboard-stat">
+                                <div class="dashboard-stat-val gradient-text">4.2</div>
+                                <div class="dashboard-stat-label">Posición Prom.</div>
+                                <div class="dashboard-stat-trend">↓ mejoró 8pos</div>
+                            </div>
+                        </div>
+                        <div class="dashboard-chart-mini">
+                            <div class="mini-bar" style="height:30%"></div>
+                            <div class="mini-bar" style="height:40%"></div>
+                            <div class="mini-bar" style="height:35%"></div>
+                            <div class="mini-bar" style="height:55%"></div>
+                            <div class="mini-bar" style="height:70%"></div>
+                            <div class="mini-bar mini-bar--active" style="height:90%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CIERRE FUERTE ===== -->
+    <section class="seo-cierre cta-final">
+        <div class="container">
+            <div class="cta-content">
+                <div class="cierre-label">
+                    <span>⏳</span>
+                    <span>El tiempo juega en tu contra</span>
+                </div>
+                <h2 class="cta-title">
+                    Tu competencia ya está trabajando su posicionamiento.
+                    <span class="gradient-text">¿Y tú?</span>
+                </h2>
+                <p class="cta-subtitle">
+                    Cada mes que pasa sin SEO es tráfico regalado a tu competencia. Comienza hoy con un diagnóstico
+                    gratuito.
+                </p>
+                <a href="#contacto-seo" class="btn-primary btn-large btn-glow">
+                    Comenzar mi estrategia SEO
+                    <span class="btn-arrow">→</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FORMULARIO DE CONTACTO ===== -->
+    <section class="contacto-form-section" id="contacto-seo">
+        <div class="container">
+            <div class="contacto-wrapper">
+                <div class="contacto-info">
+                    <span class="section-label">📧 Solicita tu Diagnóstico</span>
+                    <h2 class="section-title">Hablemos de tu estrategia SEO</h2>
+                    <p class="contacto-description">
+                        Completa el formulario y analizaremos la situación actual de tu sitio web en Google.
+                        Te respondemos en menos de 24 horas.
+                    </p>
+
+                    <div class="contacto-details">
+                        <div class="contacto-detail-item">
+                            <div class="detail-icon">📧</div>
+                            <div class="detail-content">
+                                <h4 class="detail-title">Email</h4>
+                                <a href="mailto:hola@casvadigital.com" class="detail-link">hola@casvadigital.com</a>
+                            </div>
+                        </div>
+
+                        <div class="contacto-detail-item">
+                            <div class="detail-icon">📱</div>
+                            <div class="detail-content">
+                                <h4 class="detail-title">Teléfono</h4>
+                                <a href="tel:+56936236629" class="detail-link">+56 9 3623 6629</a>
+                            </div>
+                        </div>
+
+                        <div class="contacto-detail-item">
+                            <div class="detail-icon">📍</div>
+                            <div class="detail-content">
+                                <h4 class="detail-title">Ubicación</h4>
+                                <p class="detail-text">Santiago, Chile</p>
+                            </div>
+                        </div>
+
+                        <div class="contacto-detail-item">
+                            <div class="detail-icon">⏰</div>
+                            <div class="detail-content">
+                                <h4 class="detail-title">Horario</h4>
+                                <p class="detail-text">Lun - Vie: 9:00 - 18:00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contacto-form-container glass-card">
+                    <form class="contacto-form" id="seoContactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="seo-nombre" class="form-label">Nombre *</label>
+                                <input type="text" id="seo-nombre" name="nombre" class="form-input"
+                                    placeholder="Tu nombre" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="seo-empresa" class="form-label">Empresa *</label>
+                                <input type="text" id="seo-empresa" name="empresa" class="form-input"
+                                    placeholder="Nombre de tu empresa" required>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="seo-email" class="form-label">Email *</label>
+                                <input type="email" id="seo-email" name="email" class="form-input"
+                                    placeholder="tu@email.com" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="seo-telefono" class="form-label">Teléfono</label>
+                                <input type="tel" id="seo-telefono" name="telefono" class="form-input"
+                                    placeholder="+56 9 XXXX XXXX">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="seo-web" class="form-label">URL de tu sitio web *</label>
+                            <input type="url" id="seo-web" name="web" class="form-input"
+                                placeholder="https://tuempresa.com" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="seo-plan" class="form-label">Plan de interés</label>
+                            <select id="seo-plan" name="plan" class="form-select">
+                                <option value="" disabled selected>¿Qué plan te interesa?</option>
+                                <option value="impulso">Plan Impulso SEO (3 meses)</option>
+                                <option value="crecimiento">Plan Crecimiento SEO (6 meses)</option>
+                                <option value="autoridad">Plan Autoridad Digital (12 meses)</option>
+                                <option value="consultar">No lo sé, quiero asesoría</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="seo-mensaje" class="form-label">Cuéntanos sobre tu situación actual *</label>
+                            <textarea id="seo-mensaje" name="mensaje" class="form-textarea" rows="4"
+                                placeholder="¿Tienes sitio web? ¿Cuánto tráfico recibes? ¿Cuál es tu objetivo principal?..."
+                                required></textarea>
+                        </div>
+
+                        <div class="form-checkbox-group">
+                            <input type="checkbox" id="seo-privacidad" name="privacidad" class="form-checkbox" required>
+                            <label for="seo-privacidad" class="form-checkbox-label">
+                                Acepto la <a href="#" class="form-link">política de privacidad</a> *
+                            </label>
+                        </div>
+
+                        <button type="submit" class="btn-primary btn-large btn-full" id="seoSubmitBtn">
+                            Solicitar Diagnóstico SEO Gratuito
+                            <span class="btn-arrow">→</span>
+                        </button>
+
+                        <div class="form-message" id="seoFormMessage"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <span class="logo-text">Casva<span class="logo-accent">Digital</span></span>
+                    </div>
+                    <p class="footer-description">
+                        Agencia de SEO y desarrollo web especializada en crear
+                        experiencias digitales que generan resultados.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="LinkedIn">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="GitHub">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Twitter">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h4 class="footer-title">Servicios SEO</h4>
+                    <ul class="footer-links">
+                        <li><a href="#planes">Plan Impulso SEO</a></li>
+                        <li><a href="#planes">Plan Crecimiento SEO</a></li>
+                        <li><a href="#planes">Plan Autoridad Digital</a></li>
+                        <li><a href="#metodologia">Metodología</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4 class="footer-title">Más Servicios</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html#servicios">Desarrollo Web</a></li>
+                        <li><a href="index.html#servicios">WordPress</a></li>
+                        <li><a href="index.html#servicios">APIs a Medida</a></li>
+                        <li><a href="index.html#servicios">Backend & Frontend</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4 class="footer-title">Contacto</h4>
+                    <ul class="footer-links">
+                        <li><a href="mailto:hola@casvadigital.com">hola@casvadigital.com</a></li>
+                        <li><a href="tel:+56936236629">+56 9 3623 6629</a></li>
+                        <li>Santiago, Chile</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="footer-copyright">
+                    © 2026 Casva Digital. Todos los derechos reservados.
+                </p>
+                <div class="footer-legal">
+                    <a href="#">Política de Privacidad</a>
+                    <a href="#">Términos de Servicio</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="seo.js"></script>
+</body>
+
+</html>
